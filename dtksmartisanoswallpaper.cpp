@@ -60,4 +60,6 @@ DtkSmartisanosWallpaper::DtkSmartisanosWallpaper(DMainWindow *parent)
       v2layout->addWidget(locationLineEdit);
       v2layout->addWidget(download);
       v2layout->addWidget(Smartisan);
+
+//      connect(this,SIGNAL(refresh_changed()),this,SLOT(refresh_ui()));
 }

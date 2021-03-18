@@ -39,7 +39,10 @@ private:
     void setTheme(DGuiApplicationHelper::ColorType);
 
 signals:
-    void refreshUI();
+//    void refresh_changed();
+private slots:
+//    void refresh_ui();
+
 };
 
 #endif // DTKSMARTISANOSWALLPAPER_H

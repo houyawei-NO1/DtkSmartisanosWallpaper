@@ -39,9 +39,12 @@ private:
     void setTheme(DGuiApplicationHelper::ColorType);
 
 signals:
-//    void refresh_changed();
-private slots:
-//    void refresh_ui();
+    void refresh_changed();
+
+public slots:
+    void refresh_ui();
+
+
 
 };
 

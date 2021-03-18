@@ -72,7 +72,7 @@ void DtkSmartisanosWallpaper::refresh_ui()
     QNetworkRequest request;
     QString url ="http://api-app.smartisan.com/app/index.php?r=paperapi/index/list&client_version=2&limit=100&paper_id=0";
     request.setUrl(url);
-    request.setRawHeader("Content-Type", "charset=utf8");
+    request.setRawHeader("Content-Type", "application/json;charset=utf8");
     QNetworkReply *reply = manager.get(request);
     QEventLoop loop;
     QObject::connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));

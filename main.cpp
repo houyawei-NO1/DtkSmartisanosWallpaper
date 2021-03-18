@@ -2,7 +2,7 @@
 #include <DMainWindow>
 #include <DWidgetUtil>
 #include <DApplicationSettings>
-
+#include <dtksmartisanoswallpaper.h>
 DWIDGET_USE_NAMESPACE
 
 int main(int argc, char *argv[])
@@ -11,11 +11,11 @@ int main(int argc, char *argv[])
     QGuiApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
     DApplication a(argc, argv);
     a.setOrganizationName("deepin");
-    a.setApplicationName("dtk串口助手");
-    a.setApplicationVersion("0.5");
+    a.setApplicationName("dtk_SmartisanOS壁纸工具");
+    a.setApplicationVersion("0.1");
     a.setProductIcon(QIcon(":/images/hyw.ico"));
-    a.setProductName("DTK串口助手");
-    a.setApplicationDescription("这是一个DTK串口助手应用");
+    a.setProductName("SmartisanOS壁纸工具");
+    a.setApplicationDescription("这是一个DTK_SmartisanOS壁纸工具");
 
     a.loadTranslator();
     a.setApplicationDisplayName(QCoreApplication::translate("Main", "DtkSerialport"));
@@ -27,9 +27,8 @@ int main(int argc, char *argv[])
    // DMainWindow w;
    //w.show();
 
-
-//    DtkSerialport d;
-//    d.show();
+  DtkSmartisanosWallpaper d;
+  d.show();
 
 
    // Dtk::Widget::moveToCenter(&w);

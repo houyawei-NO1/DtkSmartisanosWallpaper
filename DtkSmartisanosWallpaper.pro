@@ -17,6 +17,7 @@ HEADERS += \
     dtksmartisanoswallpaper.h
 
 DISTFILES += \
-    hyw.ico
+    hyw.ico \
+    images/smartisanos.png
 
 RC_ICONS = hyw.ico

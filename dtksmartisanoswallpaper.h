@@ -35,7 +35,18 @@ class DtkSmartisanosWallpaper : public DMainWindow
 public:
     DtkSmartisanosWallpaper(DMainWindow *parent = nullptr);
     QPixmap setpnglabel(const QString &szUrl);
-    DLabel *Smartisan = new DLabel();
+    DLabel *pic1 = new DLabel;
+    DLabel *pic2 = new DLabel;
+    DLabel *pic3 = new DLabel;
+    QString sorts = "";
+    int pagenum = 0;
+    QString author[50];
+    QString id[50];
+    QString url_png[50];
+    DLabel *name = new DLabel;
+    DLabel *auther = new DLabel;
+    DLabel *source = new DLabel;
+    DLabel *des = new DLabel;
 private:
     QWidget *s=new QWidget;
     void setTheme(DGuiApplicationHelper::ColorType);

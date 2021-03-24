@@ -35,6 +35,7 @@ class DtkSmartisanosWallpaper : public DMainWindow
 public:
     DtkSmartisanosWallpaper(DMainWindow *parent = nullptr);
     QPixmap setpnglabel(const QString &szUrl);
+    bool downIURL_to_picture(const QString &url, const QString &fileName);
     DLabel *pic1 = new DLabel;
     DLabel *pic2 = new DLabel;
     DLabel *pic3 = new DLabel;
@@ -47,6 +48,9 @@ public:
     DLabel *auther = new DLabel;
     DLabel *source = new DLabel;
     DLabel *des = new DLabel;
+    DLabel *pagelabel = new DLabel;
+    DPushButton *filelocation = new DPushButton();
+    QString PathName,current_File;
 private:
     QWidget *s=new QWidget;
     void setTheme(DGuiApplicationHelper::ColorType);

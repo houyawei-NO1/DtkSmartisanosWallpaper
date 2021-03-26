@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     DApplication a(argc, argv);
     a.setOrganizationName("deepin");
     a.setApplicationName("dtk_SmartisanOS壁纸工具");
-    a.setApplicationVersion("0.1");
+    a.setApplicationVersion("0.2");
     a.setProductIcon(QIcon(":/images/hyw.ico"));
     a.setProductName("SmartisanOS壁纸工具");
     a.setApplicationDescription("这是一个DTK_SmartisanOS壁纸工具");
